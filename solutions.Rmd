@@ -15,7 +15,25 @@ Add your code and submit a PR.
 ### D3 in the Console: blue circles {-}
 <a href="https://github.com/jtr13/d3book/edit/master/solutions.Rmd" target="_blank"><i class="fa fa-edit"></i></a>
 
-<!-- add your solution here -->
+previous step (attach data): 
+d3.select("svg").selectAll("circle").data([100,150,200,250,300,350]);
+
+Step 1:
+d3.selectAll("circle").transition().duration(2000).attr("cx", "400");
+
+Step 2:
+d3.selectAll("circle").transition().duration(2000).attr("cx", "40").attr("fill","green");
+
+Step 3:
+d3.select("#Tracy").transition().duration(2000).attr("cx", "400");
+
+Step 4:
+d3.selectAll("circle").transition().duration(2000).attr("cx", "200");
+d3.selectAll("circle").transition().duration(2000).attr("cy", "175");
+
+return to origin version:  
+d3.select("svg").selectAll("circle").transition().duration(2000).attr("cy", d =>d).attr("cx",50).attr("fill","blue");
+
 
 ### D3 in the Console: data bind {-}
 <a href="https://github.com/jtr13/d3book/edit/master/solutions.Rmd" target="_blank"><i class="fa fa-edit"></i></a>
